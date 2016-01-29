@@ -82,6 +82,7 @@ define(['jquery', 'underscore'], function($, _){
 		// --------------------
 		// | Draw object path |
 		// --------------------
+		if (settings.showGrid === true) {
 		(function(){
 			if (object.path.length > 3)
 			{
@@ -116,7 +117,7 @@ define(['jquery', 'underscore'], function($, _){
 				ctx.strokeStyle = "#666";
 				ctx.stroke();
 			};
-		})();
+		})();};
 
 		// ---------------
 		// | Draw object |
